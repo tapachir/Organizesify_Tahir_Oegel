@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity.MainActivity">
+
+
+    <item android:id="@+id/menu_save"
+        android:icon="@drawable/ic_menu_save"
+        android:alphabeticShortcut='s'
+        android:title="@string/save_menu_noteedit"
+        app:showAsAction="always" />
+    <item android:id="@+id/menu_delete"
+        android:icon="@drawable/ic_menu_delete"
+        android:title="@string/delete_menu_noteedit"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/toDoList"
+        android:title="ToDoList"
+        android:orderInCategory="200"
+        app:showAsAction="never"/>
+
+
+    <item
+        android:id="@+id/about"
+        android:title="about"
+        android:orderInCategory="400"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@id/home"
+        android:title="Home"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/notepad"
+        android:title="NotePad"
+        android:orderInCategory="300"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/alarm"
+        android:title="Alarm"
+        android:orderInCategory="350"
+        app:showAsAction="never"
+        />
+
+
+
+</menu>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    android:id="@+id/my_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.organizesifynewtry.MainActivity"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#BDE2F9">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_todo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="52dp"
+        android:fontFamily="serif-monospace"
+        android:text="WELCOME TO ORGANIZESIFY"
+        android:textColor="@android:color/black"
+        android:textSize="50dp" />
+
+    <Button
+        android:id="@+id/btn_todo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="To-Do List"
+        android:onClick="goToToDoList"/>
+
+    <Button
+        android:id="@+id/btn_notepad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_todo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:text="Notepad"
+        android:onClick="goToNotePad"/>
+
+    <Button
+        android:id="@+id/btn_about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_notepad"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/btn_notepad"
+        android:layout_marginBottom="36dp"
+        android:text="About"
+        android:onClick="goToAbout"/>
+
+    <Button
+        android:id="@+id/btn_alarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_todo"
+        android:layout_alignStart="@+id/btn_todo"
+        android:layout_below="@+id/btn_notepad"
+        android:layout_marginTop="12dp"
+        android:text="Alarm"
+        android:onClick="goToAlarms"/>
+
+
+</RelativeLayout>
